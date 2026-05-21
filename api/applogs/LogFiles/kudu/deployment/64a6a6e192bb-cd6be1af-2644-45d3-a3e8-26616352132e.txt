@@ -1,0 +1,79 @@
+2026-05-19T20:49:45  Fetching changes.
+2026-05-19T20:49:45    Starting  LocalZipHandler
+2026-05-19T20:49:45    Cleaning up temp folders from previous zip deployments and extracting pushed zip file /tmp/zipdeploy/56f552e4-9046-4af8-827e-3dc16d59c2ab.zip (77.39 MB) to /tmp/zipdeploy/extracted
+2026-05-19T20:54:00  Updating submodules.
+2026-05-19T20:54:05  Preparing deployment for commit id 'c203f9f4-5'.
+2026-05-19T20:54:10  PreDeployment: context.CleanOutputPath False
+2026-05-19T20:54:10  PreDeployment: context.OutputPath /home/site/wwwroot
+2026-05-19T20:54:12  Repository path is /tmp/zipdeploy/extracted
+2026-05-19T20:54:13  Running oryx build...
+2026-05-19T20:54:13    Command: oryx build /tmp/zipdeploy/extracted -o /home/site/wwwroot --platform python --platform-version 3.13 -p virtualenv_name=antenv --log-file /tmp/build-debug.log  -i /tmp/8deb5e8c58eb021 --compress-destination-dir | tee /tmp/oryx-build.log
+2026-05-19T20:54:42    Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+2026-05-19T20:54:42    You can report issues at https://github.com/Microsoft/Oryx/issues
+2026-05-19T20:54:42    
+2026-05-19T20:54:42    Oryx Version: 0.2.20260420.1+83c04e9ee1882dc90d279b63348824daedbd3c96, Commit: 83c04e9ee1882dc90d279b63348824daedbd3c96, ReleaseTagName: 20260420.1
+2026-05-19T20:54:42    
+2026-05-19T20:54:43    Build Operation ID: 38834015bcef43f5
+2026-05-19T20:54:43    Repository Commit : c203f9f4-5eab-41c2-9a15-e8850ef01688
+2026-05-19T20:54:43    OS Type           : bookworm
+2026-05-19T20:54:43    Image Type        : githubactions
+2026-05-19T20:54:43    
+2026-05-19T20:54:44    Primary SDK Storage URL: https://oryx-cdn.microsoft.io
+2026-05-19T20:54:45    Backup SDK Storage URL: 
+2026-05-19T20:54:45    ACR SDK Registry URL: (not set)
+2026-05-19T20:54:45    SDK provider status:
+2026-05-19T20:54:45      External ACR SDK provider: Disabled
+2026-05-19T20:54:45      External SDK provider: Enabled
+2026-05-19T20:54:45      Direct ACR SDK provider: Disabled
+2026-05-19T20:54:46      Blob SDK provider: Enabled
+2026-05-19T20:54:46    Detecting platforms...
+2026-05-19T20:54:46    Requesting metadata for platform python from external SDK provider
+2026-05-19T20:54:50    Requesting metadata for platform python from external SDK provider
+2026-05-19T20:54:51    Version resolved using external SDK provider.
+2026-05-19T20:55:00    Detected following platforms:
+2026-05-19T20:55:00      python: 3.13.11
+2026-05-19T20:55:02    
+2026-05-19T20:55:03    Using intermediate directory '/tmp/8deb5e8c58eb021'.
+2026-05-19T20:55:03    
+2026-05-19T20:55:03    Copying files to the intermediate directory...
+2026-05-19T20:56:22    Copying files to intermediate directory done in 79 sec(s).
+2026-05-19T20:56:22    
+2026-05-19T20:56:22    Source directory     : /tmp/8deb5e8c58eb021
+2026-05-19T20:56:22    Destination directory: /home/site/wwwroot
+2026-05-19T20:56:23    
+2026-05-19T20:56:24    Running build script snippets...
+2026-05-19T20:56:24    Python Version: /tmp/oryx/platforms/python/3.13.11/bin/python3.13
+2026-05-19T20:56:24    Creating directory for command manifest file if it does not exist
+2026-05-19T20:56:24    Removing existing manifest file
+2026-05-19T20:56:24    Python Virtual Environment: antenv
+2026-05-19T20:56:24    Creating virtual environment...
+2026-05-19T20:56:25    Executing: /tmp/oryx/platforms/python/3.13.11/bin/python3.13 -m venv antenv --copies
+2026-05-19T20:57:55    Activating virtual environment...
+2026-05-19T20:57:55    Could not find requirements.txt, pyproject.toml, or setup.py; Not installing dependencies. More information: https://aka.ms/requirements-not-found
+2026-05-19T20:57:55    Not a vso image, so not writing build commands
+2026-05-19T20:57:55    Build script snippets done in 91 sec(s).
+2026-05-19T20:57:55    Preparing output...
+2026-05-19T20:57:56    Compressing source directory directly to destination (optimized path)...
+2026-05-19T20:57:56    Using zstd for compression
+2026-05-19T20:59:11    Copied the compressed output to '/home/site/wwwroot'
+2026-05-19T20:59:11    Direct compression with zstd done in 76 sec(s).
+2026-05-19T20:59:11    
+2026-05-19T20:59:11    Removing existing manifest file
+2026-05-19T20:59:11    Creating a manifest file...
+2026-05-19T20:59:11    Manifest file created.
+2026-05-19T20:59:11    Copying .ostype to manifest output directory.
+2026-05-19T20:59:11    
+2026-05-19T20:59:11    Total execution done in 248 sec(s).
+2026-05-19T20:59:12  Running post deployment command(s)...
+2026-05-19T20:59:12  
+2026-05-19T20:59:12  Generating summary of Oryx build
+2026-05-19T20:59:13  Parsing the build logs
+2026-05-19T20:59:13  Found 0 issue(s)
+2026-05-19T20:59:13  
+2026-05-19T20:59:13  Build Summary :
+2026-05-19T20:59:13  ===============
+2026-05-19T20:59:13  Errors (0)
+2026-05-19T20:59:13  Warnings (0)
+2026-05-19T20:59:14  
+2026-05-19T20:59:14  Triggering container recycle for OneDeploy by adding/updating restartTrigger.txt to the site root path
+2026-05-19T20:59:14  Deployment successful. deployer = OneDeploy deploymentPath = OneDeploy

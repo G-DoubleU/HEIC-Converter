@@ -1,0 +1,250 @@
+2026-05-19T20:21:35.1724180Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-05-19T20:21:35.5429325Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-05-19T20:21:35.5436437Z Container start method called.
+2026-05-19T20:21:35.5459076Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.5:13209/appsvc/python:3.13_20260504.4.tuxprod for heic-convert., DetailsLevel: INFO
+2026-05-19T20:21:35.5464258Z Establishing network.
+2026-05-19T20:21:35.5475690Z Pulling image: appsvc/python:3.13_20260504.4.tuxprod.
+2026-05-19T20:22:07.4276018Z Image appsvc/python:3.13_20260504.4.tuxprod is pulled from registry 10.1.0.5:13209
+2026-05-19T20:22:07.4314134Z Container is starting.
+2026-05-19T20:22:07.6109424Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for heic-convert., DetailsLevel: INFO
+2026-05-19T20:22:07.6112940Z Establishing user namespace if not established already.
+2026-05-19T20:22:07.6114958Z Establishing network if not established already.
+2026-05-19T20:22:07.6116726Z Mounting volumes.
+2026-05-19T20:22:07.6139889Z Nested mountpoint 
+2026-05-19T20:22:07.7847838Z Nested mountpoint volatile/logs
+2026-05-19T20:22:07.8710732Z Nested mountpoint 
+2026-05-19T20:22:07.9274931Z Nested mountpoint 
+2026-05-19T20:22:07.9289628Z Nested mountpoint 
+2026-05-19T20:22:31.8153370Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for heic-convert. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-05-19T20:22:31.8156288Z Creating container.
+2026-05-19T20:22:31.8168168Z Creating pipes for streaming container io.
+2026-05-19T20:22:31.8170249Z Creating stdout named pipe at /podr/container/pipe/3580bf78d892_heic-convert/stdout_ae50b3db634a409590c35d01294b6581.
+2026-05-19T20:22:31.8234551Z Successfully created stdout named pipe at: /podr/container/pipe/3580bf78d892_heic-convert/stdout_ae50b3db634a409590c35d01294b6581.
+2026-05-19T20:22:31.8239356Z Opening named pipe /podr/container/pipe/3580bf78d892_heic-convert/stdout_ae50b3db634a409590c35d01294b6581 for reading in non-blocking mode.
+2026-05-19T20:22:31.8245109Z Successfully opened named pipe: /podr/container/pipe/3580bf78d892_heic-convert/stdout_ae50b3db634a409590c35d01294b6581.
+2026-05-19T20:22:31.8248233Z Successfully removed non-blocking flag from /podr/container/pipe/3580bf78d892_heic-convert/stdout_ae50b3db634a409590c35d01294b6581.
+2026-05-19T20:22:31.8352406Z Creating stderr named pipe at /podr/container/pipe/3580bf78d892_heic-convert/stderr_fa757abe71bb422fa55fc7318f102752.
+2026-05-19T20:22:31.8360988Z Successfully created stderr named pipe at: /podr/container/pipe/3580bf78d892_heic-convert/stderr_fa757abe71bb422fa55fc7318f102752.
+2026-05-19T20:22:31.8364457Z Opening named pipe /podr/container/pipe/3580bf78d892_heic-convert/stderr_fa757abe71bb422fa55fc7318f102752 for reading in non-blocking mode.
+2026-05-19T20:22:31.8367479Z Successfully opened named pipe: /podr/container/pipe/3580bf78d892_heic-convert/stderr_fa757abe71bb422fa55fc7318f102752.
+2026-05-19T20:22:31.8370270Z Successfully removed non-blocking flag from /podr/container/pipe/3580bf78d892_heic-convert/stderr_fa757abe71bb422fa55fc7318f102752.
+2026-05-19T20:22:31.8396764Z Creating container with image: appsvc/python:3.13_20260504.4.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.13_20260504.4.tuxprod
+2026-05-19T20:22:32.2898874Z Starting container: 3580bf78d892_heic-convert.
+2026-05-19T20:22:32.3106521Z Starting watchers and probes.
+2026-05-19T20:22:32.3190534Z Starting metrics collection.
+2026-05-19T20:22:32.3192411Z Container is running.
+2026-05-19T20:22:32.3215237Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container heic-convert successfully created and is running., DetailsLevel: INFO
+2026-05-19T20:22:32.3602287Z Container start method finished after 56816 ms.
+2026-05-19T20:22:32.3605400Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container heic-convert successfully created and is running., DetailsLevel: INFO
+2026-05-19T20:22:32.3847482Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-05-19T20:22:45.4491361Z Site startup probe succeeded after 13.0342441 seconds.
+2026-05-19T20:22:45.5315109Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 13.0342441 seconds., DetailsLevel: INFO
+2026-05-19T20:22:45.7046286Z Site started.
+2026-05-19T20:22:45.7047592Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 05/19/2026 20:22:45 (UTC), DetailsLevel: INFO
+2026-05-19T20:22:45.7414571Z Site is running with patch version PYTHON 3.13.13
+2026-05-19T20:23:47.4149526Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-05-19T20:23:49.2316480Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-05-19T20:23:49.2318226Z Container start method called.
+2026-05-19T20:23:49.2319099Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.4:13209/appsvc/python:3.13_20260504.4.tuxprod for heic-convert., DetailsLevel: INFO
+2026-05-19T20:23:49.2320553Z Establishing network.
+2026-05-19T20:23:49.2336693Z Pulling image: appsvc/python:3.13_20260504.4.tuxprod.
+2026-05-19T20:23:49.7849165Z Image appsvc/python:3.13_20260504.4.tuxprod is pulled from registry 10.1.0.4:13209
+2026-05-19T20:23:49.7851520Z Container is starting.
+2026-05-19T20:23:49.7852627Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for heic-convert., DetailsLevel: INFO
+2026-05-19T20:23:49.7854669Z Establishing user namespace if not established already.
+2026-05-19T20:23:49.7933607Z Establishing network if not established already.
+2026-05-19T20:23:49.7941188Z Mounting volumes.
+2026-05-19T20:23:49.7978840Z Nested mountpoint 
+2026-05-19T20:23:49.8066557Z Nested mountpoint volatile/logs
+2026-05-19T20:23:49.8119507Z Nested mountpoint 
+2026-05-19T20:23:49.8202567Z Nested mountpoint 
+2026-05-19T20:23:49.8291671Z Nested mountpoint 
+2026-05-19T20:23:50.0953950Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for heic-convert. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-05-19T20:23:50.0955768Z Creating container.
+2026-05-19T20:23:50.0957233Z Creating pipes for streaming container io.
+2026-05-19T20:23:50.0960657Z Creating stdout named pipe at /podr/container/pipe/8c5f564613f4_heic-convert/stdout_c51aa7f4792c404585329b0e67e21429.
+2026-05-19T20:23:50.0964007Z Successfully created stdout named pipe at: /podr/container/pipe/8c5f564613f4_heic-convert/stdout_c51aa7f4792c404585329b0e67e21429.
+2026-05-19T20:23:50.0967764Z Opening named pipe /podr/container/pipe/8c5f564613f4_heic-convert/stdout_c51aa7f4792c404585329b0e67e21429 for reading in non-blocking mode.
+2026-05-19T20:23:50.0969630Z Successfully opened named pipe: /podr/container/pipe/8c5f564613f4_heic-convert/stdout_c51aa7f4792c404585329b0e67e21429.
+2026-05-19T20:23:50.0971012Z Successfully removed non-blocking flag from /podr/container/pipe/8c5f564613f4_heic-convert/stdout_c51aa7f4792c404585329b0e67e21429.
+2026-05-19T20:23:50.0972996Z Creating stderr named pipe at /podr/container/pipe/8c5f564613f4_heic-convert/stderr_e232d7815f6247f687dc25838bc58d5b.
+2026-05-19T20:23:50.0974842Z Successfully created stderr named pipe at: /podr/container/pipe/8c5f564613f4_heic-convert/stderr_e232d7815f6247f687dc25838bc58d5b.
+2026-05-19T20:23:50.0975781Z Opening named pipe /podr/container/pipe/8c5f564613f4_heic-convert/stderr_e232d7815f6247f687dc25838bc58d5b for reading in non-blocking mode.
+2026-05-19T20:23:50.0977252Z Successfully opened named pipe: /podr/container/pipe/8c5f564613f4_heic-convert/stderr_e232d7815f6247f687dc25838bc58d5b.
+2026-05-19T20:23:50.0979001Z Successfully removed non-blocking flag from /podr/container/pipe/8c5f564613f4_heic-convert/stderr_e232d7815f6247f687dc25838bc58d5b.
+2026-05-19T20:23:50.1149476Z Creating container with image: appsvc/python:3.13_20260504.4.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.13_20260504.4.tuxprod
+2026-05-19T20:23:50.5921026Z Starting container: 8c5f564613f4_heic-convert.
+2026-05-19T20:23:50.6443226Z Starting watchers and probes.
+2026-05-19T20:23:50.6460668Z Starting metrics collection.
+2026-05-19T20:23:50.6481688Z Container is running.
+2026-05-19T20:23:50.6483235Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container heic-convert successfully created and is running., DetailsLevel: INFO
+2026-05-19T20:23:50.7071738Z Container start method finished after 1475 ms.
+2026-05-19T20:23:50.7074163Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container heic-convert successfully created and is running., DetailsLevel: INFO
+2026-05-19T20:23:50.7074461Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-05-19T20:24:12.2172251Z Container has finished running with exit code: 1.
+2026-05-19T20:24:12.2177157Z Container is terminating. Grace period: 5 seconds.
+2026-05-19T20:24:12.2192757Z Stop and delete container. Retry count = 0
+2026-05-19T20:24:12.2197940Z Stopping container: 8c5f564613f4_heic-convert.
+2026-05-19T20:24:12.2844892Z Deleting container: 8c5f564613f4_heic-convert. Retry count = 0
+2026-05-19T20:24:12.4886684Z Container spec TerminationMessagePolicy  path 
+2026-05-19T20:24:12.4889510Z Container is terminated. Total time elapsed: 270 ms.
+2026-05-19T20:24:12.4892203Z Site container: heic-convert terminated during site startup.
+2026-05-19T20:24:12.4992799Z State: Stopping, Action: CancellingStartup, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site container: heic-convert terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:24:12.5229253Z Site startup probe failed after 21.8147462 seconds.
+2026-05-19T20:24:12.6666565Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:24:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: heic-convert terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:24:12.6732601Z Failed to start site. Revert by stopping site.
+2026-05-19T20:24:12.6740805Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:24:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: heic-convert terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:24:12.6776085Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:24:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: heic-convert terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:24:12.6777851Z Site: heic-convert stopped.
+2026-05-19T20:24:32.9478639Z State: Stopping, Action: StoppingSite, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 05/19/2026 20:22:45 (UTC), DetailsLevel: INFO
+2026-05-19T20:24:32.9482551Z State: Stopping, Action: StoppingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 05/19/2026 20:22:45 (UTC), DetailsLevel: INFO
+2026-05-19T20:24:32.9484179Z Container is terminating. Grace period: 5 seconds.
+2026-05-19T20:24:32.9604208Z Stop and delete container. Retry count = 0
+2026-05-19T20:24:32.9605378Z Stopping container: 3580bf78d892_heic-convert.
+2026-05-19T20:24:38.2643845Z Deleting container: 3580bf78d892_heic-convert. Retry count = 0
+2026-05-19T20:24:38.4925970Z Container spec TerminationMessagePolicy  path 
+2026-05-19T20:24:38.4927741Z Container is terminated. Total time elapsed: 5544 ms.
+2026-05-19T20:24:38.4929108Z Site: heic-convert stopped.
+2026-05-19T20:24:12.6838333Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:24:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: heic-convert terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:24:12.8042469Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:24:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: heic-convert terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:24:12.8998785Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:24:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/19/2026 20:24:12 (UTC), DetailsLevel: ERR
+2026-05-19T20:24:12.9065084Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:24:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/19/2026 20:24:12 (UTC), DetailsLevel: ERR
+2026-05-19T20:30:29.7004008Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:24:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/19/2026 20:24:12 (UTC), DetailsLevel: ERR
+2026-05-19T20:30:30.3622286Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:24:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/19/2026 20:24:12 (UTC), DetailsLevel: ERR
+2026-05-19T20:30:30.3625068Z Container start method called.
+2026-05-19T20:30:30.3625892Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:24:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.4:13209/appsvc/python:3.13_20260504.4.tuxprod for heic-convert., DetailsLevel: INFO
+2026-05-19T20:30:30.3629259Z Establishing network.
+2026-05-19T20:30:30.3631172Z Pulling image: appsvc/python:3.13_20260504.4.tuxprod.
+2026-05-19T20:30:30.8817965Z Container is starting.
+2026-05-19T20:30:30.8819228Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:24:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for heic-convert., DetailsLevel: INFO
+2026-05-19T20:30:30.8830369Z Establishing user namespace if not established already.
+2026-05-19T20:30:30.8836416Z Establishing network if not established already.
+2026-05-19T20:30:30.8840494Z Mounting volumes.
+2026-05-19T20:30:30.8843393Z Nested mountpoint 
+2026-05-19T20:30:31.0234079Z Nested mountpoint volatile/logs
+2026-05-19T20:30:31.0324951Z Nested mountpoint 
+2026-05-19T20:30:31.0340218Z Nested mountpoint 
+2026-05-19T20:30:31.0400677Z Nested mountpoint 
+2026-05-19T20:30:31.2283987Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:24:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for heic-convert. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-05-19T20:30:31.2285352Z Creating container.
+2026-05-19T20:30:31.2286614Z Creating pipes for streaming container io.
+2026-05-19T20:30:31.2288515Z Creating stdout named pipe at /podr/container/pipe/a898c631528e_heic-convert/stdout_f66348fad8074282907012a7c0f8a905.
+2026-05-19T20:30:31.2318248Z Successfully created stdout named pipe at: /podr/container/pipe/a898c631528e_heic-convert/stdout_f66348fad8074282907012a7c0f8a905.
+2026-05-19T20:30:31.2319435Z Opening named pipe /podr/container/pipe/a898c631528e_heic-convert/stdout_f66348fad8074282907012a7c0f8a905 for reading in non-blocking mode.
+2026-05-19T20:30:31.2320882Z Successfully opened named pipe: /podr/container/pipe/a898c631528e_heic-convert/stdout_f66348fad8074282907012a7c0f8a905.
+2026-05-19T20:30:31.2322096Z Successfully removed non-blocking flag from /podr/container/pipe/a898c631528e_heic-convert/stdout_f66348fad8074282907012a7c0f8a905.
+2026-05-19T20:30:31.2329803Z Creating stderr named pipe at /podr/container/pipe/a898c631528e_heic-convert/stderr_cc31f1de31594645a1a562b47cb61795.
+2026-05-19T20:30:31.2331659Z Successfully created stderr named pipe at: /podr/container/pipe/a898c631528e_heic-convert/stderr_cc31f1de31594645a1a562b47cb61795.
+2026-05-19T20:30:31.2332776Z Opening named pipe /podr/container/pipe/a898c631528e_heic-convert/stderr_cc31f1de31594645a1a562b47cb61795 for reading in non-blocking mode.
+2026-05-19T20:30:31.2334098Z Successfully opened named pipe: /podr/container/pipe/a898c631528e_heic-convert/stderr_cc31f1de31594645a1a562b47cb61795.
+2026-05-19T20:30:31.2335294Z Successfully removed non-blocking flag from /podr/container/pipe/a898c631528e_heic-convert/stderr_cc31f1de31594645a1a562b47cb61795.
+2026-05-19T20:30:31.2336908Z Creating container with image: appsvc/python:3.13_20260504.4.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.13_20260504.4.tuxprod
+2026-05-19T20:30:31.4705273Z Starting container: a898c631528e_heic-convert.
+2026-05-19T20:30:31.4879643Z Starting watchers and probes.
+2026-05-19T20:30:31.4885798Z Starting metrics collection.
+2026-05-19T20:30:31.4888282Z Container is running.
+2026-05-19T20:30:31.4889074Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:24:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container heic-convert successfully created and is running., DetailsLevel: INFO
+2026-05-19T20:30:31.5095506Z Container start method finished after 1146 ms.
+2026-05-19T20:30:31.5097574Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:24:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container heic-convert successfully created and is running., DetailsLevel: INFO
+2026-05-19T20:30:31.5097884Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:24:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-05-19T20:30:39.7224225Z Container has finished running with exit code: 1.
+2026-05-19T20:30:39.7225912Z Container is terminating. Grace period: 5 seconds.
+2026-05-19T20:30:39.7229781Z Stop and delete container. Retry count = 0
+2026-05-19T20:30:39.7231283Z Stopping container: a898c631528e_heic-convert.
+2026-05-19T20:30:39.7498388Z Deleting container: a898c631528e_heic-convert. Retry count = 0
+2026-05-19T20:30:39.8277431Z Container spec TerminationMessagePolicy  path 
+2026-05-19T20:30:39.8290646Z Container is terminated. Total time elapsed: 106 ms.
+2026-05-19T20:30:39.8292186Z Site container: heic-convert terminated during site startup.
+2026-05-19T20:30:39.8293263Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:24:12, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: heic-convert terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:30:39.8314420Z Site startup probe failed after 8.3213551 seconds.
+2026-05-19T20:30:39.8948501Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: heic-convert terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:30:39.8979844Z Failed to start site. Revert by stopping site.
+2026-05-19T20:30:39.8983792Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: heic-convert terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:30:39.8985847Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: heic-convert terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:30:39.8986000Z Site: heic-convert stopped.
+2026-05-19T20:30:39.9026872Z State: Stopping, Action: UnmountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: heic-convert terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:30:39.9909417Z State: Stopping, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: heic-convert terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:30:40.0468398Z Site: heic-convert will be blocked for 1 minutes till 05/19/2026 20:31:40
+2026-05-19T20:30:40.0470461Z State: Blocked, Action: StoppingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site: heic-convert will be blocked for 1 minutes till 05/19/2026 20:31:40, DetailsLevel: WARN
+2026-05-19T20:30:40.0630679Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/19/2026 20:30:40 (UTC), DetailsLevel: WARN
+2026-05-19T20:30:40.1127311Z State: Stopped, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site stopped at 05/19/2026 20:30:40 (UTC), DetailsLevel: WARN
+2026-05-19T20:30:49.5983498Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 05/19/2026 20:31:40, DetailsLevel: WARN
+2026-05-19T20:30:49.5983914Z Start site prohibitted because the site is being blocked.
+2026-05-19T20:30:49.7150527Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 05/19/2026 20:31:40, DetailsLevel: WARN
+2026-05-19T20:30:49.7150819Z Start site prohibitted because the site is being blocked.
+2026-05-19T20:30:51.1897500Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 05/19/2026 20:31:40, DetailsLevel: WARN
+2026-05-19T20:30:51.1897796Z Start site prohibitted because the site is being blocked.
+2026-05-19T20:30:52.1834373Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 05/19/2026 20:31:40, DetailsLevel: WARN
+2026-05-19T20:30:52.1834667Z Start site prohibitted because the site is being blocked.
+2026-05-19T20:30:52.7797452Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 05/19/2026 20:31:40, DetailsLevel: WARN
+2026-05-19T20:30:52.7797767Z Start site prohibitted because the site is being blocked.
+2026-05-19T20:31:20.9071247Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 05/19/2026 20:31:40, DetailsLevel: WARN
+2026-05-19T20:31:20.9071638Z Start site prohibitted because the site is being blocked.
+2026-05-19T20:31:21.5508736Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 05/19/2026 20:31:40, DetailsLevel: WARN
+2026-05-19T20:31:21.5509366Z Start site prohibitted because the site is being blocked.
+2026-05-19T20:31:22.2638218Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 05/19/2026 20:31:40, DetailsLevel: WARN
+2026-05-19T20:31:22.2638801Z Start site prohibitted because the site is being blocked.
+2026-05-19T20:31:22.7036169Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 05/19/2026 20:31:40, DetailsLevel: WARN
+2026-05-19T20:31:22.7036459Z Start site prohibitted because the site is being blocked.
+2026-05-19T20:31:23.1306771Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 05/19/2026 20:31:40, DetailsLevel: WARN
+2026-05-19T20:31:23.1307081Z Start site prohibitted because the site is being blocked.
+2026-05-19T20:31:23.5335292Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 05/19/2026 20:31:40, DetailsLevel: WARN
+2026-05-19T20:31:23.5335949Z Start site prohibitted because the site is being blocked.
+2026-05-19T20:31:23.9253429Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 05/19/2026 20:31:40, DetailsLevel: WARN
+2026-05-19T20:31:23.9253944Z Start site prohibitted because the site is being blocked.
+2026-05-19T20:31:33.2812639Z State: Blocked, Action: None, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 05/19/2026 20:31:40, DetailsLevel: WARN
+2026-05-19T20:31:33.2812953Z Start site prohibitted because the site is being blocked.
+2026-05-19T20:31:40.0495622Z Site: heic-convert is unblocked.
+2026-05-19T20:31:44.5549468Z State: Starting, Action: EstablishingSiteNetworks, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 05/19/2026 20:31:40, DetailsLevel: WARN
+2026-05-19T20:31:44.8705624Z State: Starting, Action: StartingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site is blocked due to multiple, consecutive cold start failures. Site scheduled to be unblocked at 05/19/2026 20:31:40, DetailsLevel: WARN
+2026-05-19T20:31:44.8707439Z Container start method called.
+2026-05-19T20:31:44.8708088Z State: Starting, Action: PullingImage, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pulling image 10.1.0.4:13209/appsvc/python:3.13_20260504.4.tuxprod for heic-convert., DetailsLevel: INFO
+2026-05-19T20:31:44.8709326Z Establishing network.
+2026-05-19T20:31:44.8712875Z Pulling image: appsvc/python:3.13_20260504.4.tuxprod.
+2026-05-19T20:31:45.0062909Z Container is starting.
+2026-05-19T20:31:45.0066417Z State: Starting, Action: MountingVolumes, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Mounting volumes for heic-convert., DetailsLevel: INFO
+2026-05-19T20:31:45.0069835Z Establishing user namespace if not established already.
+2026-05-19T20:31:45.0072040Z Establishing network if not established already.
+2026-05-19T20:31:45.0074588Z Mounting volumes.
+2026-05-19T20:31:45.0080159Z Nested mountpoint 
+2026-05-19T20:31:45.0091955Z Nested mountpoint volatile/logs
+2026-05-19T20:31:45.0178146Z Nested mountpoint 
+2026-05-19T20:31:45.0199103Z Nested mountpoint 
+2026-05-19T20:31:45.0224958Z Nested mountpoint 
+2026-05-19T20:31:45.1213717Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Finished pulling container image and mounting volumes for heic-convert. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-05-19T20:31:45.1237647Z Creating container.
+2026-05-19T20:31:45.1238701Z Creating pipes for streaming container io.
+2026-05-19T20:31:45.1239579Z Creating stdout named pipe at /podr/container/pipe/cb550f9aadf4_heic-convert/stdout_c7885b71d1f04992bb94aa8eae3827de.
+2026-05-19T20:31:45.1241501Z Successfully created stdout named pipe at: /podr/container/pipe/cb550f9aadf4_heic-convert/stdout_c7885b71d1f04992bb94aa8eae3827de.
+2026-05-19T20:31:45.1242267Z Opening named pipe /podr/container/pipe/cb550f9aadf4_heic-convert/stdout_c7885b71d1f04992bb94aa8eae3827de for reading in non-blocking mode.
+2026-05-19T20:31:45.1243175Z Successfully opened named pipe: /podr/container/pipe/cb550f9aadf4_heic-convert/stdout_c7885b71d1f04992bb94aa8eae3827de.
+2026-05-19T20:31:45.1244173Z Successfully removed non-blocking flag from /podr/container/pipe/cb550f9aadf4_heic-convert/stdout_c7885b71d1f04992bb94aa8eae3827de.
+2026-05-19T20:31:45.1248791Z Creating stderr named pipe at /podr/container/pipe/cb550f9aadf4_heic-convert/stderr_bc99b89edfd149359a3b15a3c762720a.
+2026-05-19T20:31:45.1250663Z Successfully created stderr named pipe at: /podr/container/pipe/cb550f9aadf4_heic-convert/stderr_bc99b89edfd149359a3b15a3c762720a.
+2026-05-19T20:31:45.1252831Z Opening named pipe /podr/container/pipe/cb550f9aadf4_heic-convert/stderr_bc99b89edfd149359a3b15a3c762720a for reading in non-blocking mode.
+2026-05-19T20:31:45.1254428Z Successfully opened named pipe: /podr/container/pipe/cb550f9aadf4_heic-convert/stderr_bc99b89edfd149359a3b15a3c762720a.
+2026-05-19T20:31:45.1255516Z Successfully removed non-blocking flag from /podr/container/pipe/cb550f9aadf4_heic-convert/stderr_bc99b89edfd149359a3b15a3c762720a.
+2026-05-19T20:31:45.1265641Z Creating container with image: appsvc/python:3.13_20260504.4.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.13_20260504.4.tuxprod
+2026-05-19T20:31:45.3373075Z Starting container: cb550f9aadf4_heic-convert.
+2026-05-19T20:31:45.3630189Z Starting watchers and probes.
+2026-05-19T20:31:45.3633348Z Starting metrics collection.
+2026-05-19T20:31:45.3635878Z Container is running.
+2026-05-19T20:31:45.3636584Z State: Starting, Action: CreatingContainer, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container heic-convert successfully created and is running., DetailsLevel: INFO
+2026-05-19T20:31:45.3866983Z Container start method finished after 515 ms.
+2026-05-19T20:31:45.3872004Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Container heic-convert successfully created and is running., DetailsLevel: INFO
+2026-05-19T20:31:45.3873146Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-05-19T20:31:53.1584693Z Container has finished running with exit code: 1.
+2026-05-19T20:31:53.1592955Z Container is terminating. Grace period: 5 seconds.
+2026-05-19T20:31:53.1605021Z Stop and delete container. Retry count = 0
+2026-05-19T20:31:53.1609599Z Stopping container: cb550f9aadf4_heic-convert.
+2026-05-19T20:31:53.4085995Z Deleting container: cb550f9aadf4_heic-convert. Retry count = 0
+2026-05-19T20:31:53.5364808Z Container spec TerminationMessagePolicy  path 
+2026-05-19T20:31:53.5367657Z Container is terminated. Total time elapsed: 377 ms.
+2026-05-19T20:31:53.5371396Z Site container: heic-convert terminated during site startup.
+2026-05-19T20:31:53.5372740Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:30:39, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: heic-convert terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:31:53.5461209Z Site startup probe failed after 8.1583223 seconds.
+2026-05-19T20:31:53.6067569Z State: Stopping, Action: CancellingStartup, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:31:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: heic-convert terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:31:53.6080378Z Failed to start site. Revert by stopping site.
+2026-05-19T20:31:53.6081274Z State: Stopping, Action: StoppingSite, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:31:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: heic-convert terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:31:53.6083470Z State: Stopping, Action: StoppingSiteContainers, LastError: ContainerTimeout, LastErrorTimestamp: 05/19/2026 20:31:53, LastErrorDetails: Container did not start within expected time limit of 230s. Please inspect your container logs for more details., Details: Site container: heic-convert terminated during site startup. Cancelling site startup., DetailsLevel: ERR
+2026-05-19T20:31:53.6083667Z Site: heic-convert stopped.

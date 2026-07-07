@@ -8,7 +8,7 @@ A serverless HEIC to JPG converter using Azure Functions, FastAPI, Azure infra w
 - **Azure Function** (`functions/`) is triggered by Event Grid when a file lands in storage, converts it to JPG
 - **Terraform** (`infrastructure/`) provisions all Azure resources
 
-##Prerequisites
+## Prerequisites
 
 - An Azure subscription
 - Terraform 1.6 or newer, Azure CLI, Azure Functions Core Tools
@@ -24,7 +24,7 @@ az account set --subscription "<subscription-id>"\
 ```
 
 Configure variables:
-
+``` bash
 cd infrastructure/core
 cp terraform.tfvars.example terraform.tfvars
 # Set subscription_id, resource_prefix (for naming), and location 
@@ -57,9 +57,10 @@ az webapp deploy \
   --src-path ../api.zip --type zip
 ```
 # Apply wiring 
+```bash
 cd ../infrastrucutre/wiring
 terraform init && terraform apply 
-
+``` 
 ## Notes
 - CLI will show a 504 error on the API deploy because pillow-heif takes longer to build than the gateway will wait
 - Storage account access uses connection strings rather than managed identity due to a known issue with AzureRM 's Flex Consumption resource
